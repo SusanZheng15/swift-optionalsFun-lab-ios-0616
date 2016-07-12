@@ -12,7 +12,7 @@
 /*: question1
  ### 1. What is the type of the variable `pet` declared below?
  */
-var pet = "turtle 🐢"
+var pet = "turtle 🐢"  //type String
 
 
 
@@ -22,7 +22,7 @@ var pet = "turtle 🐢"
 /*: question2
  ### 2. What is the type of the variable `petName` declared below?
  */
-var petName: String?
+var petName: String? //optional String or nil
 
 
 
@@ -32,7 +32,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+//nil
 
 
 
@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "Marlon"  //type String now
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -65,6 +65,15 @@ var petName: String?
  ### 6. Write an if statement that only prints `petName`'s value if it is not `nil`. If `petName` is `nil`, print, "There is no pet name." What do you expect to see in the console?
  */
 // write your code here
+
+if(petName == nil)
+{
+    print("There is no pet name")
+}
+else
+{
+    print(petName)
+}
 
 
 
@@ -77,7 +86,7 @@ var petName: String?
  */
 // write your code here
 
-
+let anotherPetName = petName  
 
 
 
@@ -86,8 +95,17 @@ var petName: String?
 /*: question8
  ### 8. Write an if statement that will print out "The value of anotherPetName is nil" using the variable below
  */
-var anotherPetName: String?
+//var anotherPetName: String = nil
 // write your code here
+if anotherPetName == nil
+{
+    print( "anotherPetName has no value" )
+}
+else
+{
+    print(anotherPetName!)
+}
+
 
 
 
@@ -101,7 +119,10 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if let anotherPetName = petName
+{
+    print(anotherPetName)
+}
 
 
 
@@ -115,7 +136,9 @@ var anotherPetName: String?
 
 
 
+let constant : String?
 
+constant = "Dog"
 
 
 
@@ -126,7 +149,7 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+let constant2: String? = nil
 
 
 
